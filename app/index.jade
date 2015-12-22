@@ -1,0 +1,80 @@
+doctype html
+html(lang='')
+  head
+    meta(charset='utf-8')
+    title lyric login
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='shortcut icon', href='/favicon.ico')
+    link(rel='apple-touch-icon', href='/apple-touch-icon.png')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    // build:css(.) /styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    // endbower
+    // endbuild
+    // build:css(.tmp) /styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+  body
+    .container
+      .header
+        ul.nav.nav-pills.pull-right
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') About
+          li
+            a(href='#') Contact
+        h3.text-muted lyric login
+      .jumbotron
+        h1 'Allo, 'Allo!
+        p.lead Always a pleasure scaffolding your apps.
+        p
+          a.btn.btn-lg.btn-success(href='#')
+            | Splendid! 
+            span.glyphicon.glyphicon-ok
+      .row.marketing
+        .col-lg-6
+          h4
+            a(href='https://html5boilerplate.com/') HTML5 Boilerplate
+          p
+            | HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+          h4
+            a(href='http://getbootstrap.com/') Bootstrap
+          p
+            | Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+      .footer
+        p
+          span.glyphicon.glyphicon-heart
+          |  from the Yeoman team
+    // build:js(.) scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    // endbower
+    // endbuild
+    // build:js(.) scripts/plugins.js
+    script(src='/bower_components/bootstrap/js/affix.js')
+    script(src='/bower_components/bootstrap/js/alert.js')
+    script(src='/bower_components/bootstrap/js/dropdown.js')
+    script(src='/bower_components/bootstrap/js/tooltip.js')
+    script(src='/bower_components/bootstrap/js/modal.js')
+    script(src='/bower_components/bootstrap/js/transition.js')
+    script(src='/bower_components/bootstrap/js/button.js')
+    script(src='/bower_components/bootstrap/js/popover.js')
+    script(src='/bower_components/bootstrap/js/carousel.js')
+    script(src='/bower_components/bootstrap/js/scrollspy.js')
+    script(src='/bower_components/bootstrap/js/collapse.js')
+    script(src='/bower_components/bootstrap/js/tab.js')
+    // endbuild
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
